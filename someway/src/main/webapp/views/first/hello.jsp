@@ -11,7 +11,7 @@
 <html>
 <head>
     <script type="text/javascript">
-        $(document).ready(pageFiltration () {
+        $(document).ready(function () {
 
             $("#aape").attr("href",idea.global.managerPath+"/helloworld/sayhi");
 

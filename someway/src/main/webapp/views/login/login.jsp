@@ -12,7 +12,7 @@
     <link rel='stylesheet' href='<%=basePath%>statics/bootstrap-3.3.7/css/bootstrap.css'>
     <link rel='stylesheet' href='<%=basePath%>statics/css/login.css'>
     <script type="text/javascript">
-    $(pageFiltration () {
+    $(function () {
 
 
 
@@ -20,7 +20,7 @@
     });
 
     //登录
-    pageFiltration login() {
+    function login() {
        /* var userVals = {};
         var account = $("#account").val();
         var pwd = $("#pwd").val();

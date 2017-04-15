@@ -11,7 +11,7 @@
 <head>
 
     <script type="text/javascript">
-        $(document).ready(pageFiltration () {
+        $(document).ready(function () {
 
                  $.ajax({
                      type: "POST",
@@ -19,7 +19,7 @@
                      async:false,
                     // data: {},
                      dataType: "json",
-                     success: pageFiltration(result){
+                     success: function(result){
                          var userList = result.data;
                         if(result.success){
                             for(var i = 0; i < userList.length; i++){
