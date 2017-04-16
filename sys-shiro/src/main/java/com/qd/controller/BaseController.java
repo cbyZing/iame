@@ -16,5 +16,5 @@ public abstract class BaseController {
 		return ShiroUtils.getUserEntity();
 	}
 
-	protected Long getUserId() {return getUser().getUserId();}
+	//protected Long getUserId() {//return getUser().getUserId();}
 }
