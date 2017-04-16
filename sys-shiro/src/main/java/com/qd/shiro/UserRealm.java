@@ -1,7 +1,7 @@
 package com.qd.shiro;
 
 import com.qd.entity.SysUserEntity;
-import com.qd.service.impl.SysUserService;
+import com.qd.service.SysUserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class UserRealm extends AuthorizingRealm {
     @Autowired
-    public SysUserService sysUserService;
+    private SysUserService sysUserService;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {

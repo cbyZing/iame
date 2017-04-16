@@ -1,8 +1,8 @@
-package com.qd.service;
+package com.qd.service.impl;
 
 import com.qd.dao.SysUserDao;
 import com.qd.entity.SysUserEntity;
-import com.qd.service.impl.SysUserService;
+import com.qd.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service("sysUserService")
 public class SysUserServiceImpl implements SysUserService{
     @Autowired
-    SysUserDao sysUserDao;
+    private SysUserDao sysUserDao;
 
     @Override
     public SysUserEntity queryByUsername(String username) {

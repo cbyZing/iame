@@ -1,4 +1,4 @@
-package com.qd.service.impl;
+package com.qd.service;
 
 import com.qd.entity.SysUserEntity;
 

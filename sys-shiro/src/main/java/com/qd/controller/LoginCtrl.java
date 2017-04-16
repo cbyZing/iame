@@ -27,7 +27,7 @@ import java.io.IOException;
  */
 @Controller
 @RequestMapping("/mana/home")
-public class LoginCtrl {
+public class LoginCtrl extends BaseController{
 
     @Autowired
     private Producer producer;
