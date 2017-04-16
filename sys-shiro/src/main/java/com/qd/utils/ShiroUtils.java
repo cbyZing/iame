@@ -8,7 +8,7 @@ import org.apache.shiro.subject.Subject;
 /**
  * Shiro工具类
  */
-public class ShiroUtils1 {
+public class ShiroUtils {
 
     public static Session getSession() {
         return SecurityUtils.getSubject().getSession();
