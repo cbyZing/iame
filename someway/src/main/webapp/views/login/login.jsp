@@ -92,7 +92,7 @@
                         }else{
                             vm.error = true;
                             vm.errorMsg = result.msg;
-
+                            alert(result.msg);
                             // vm.refreshCode();
                         }
                     }

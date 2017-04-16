@@ -124,7 +124,7 @@
         </property>
         <property name="packagesToScan">
             <list>
-                <value>com.qd.modules.login.model</value>
+                <value>com.qd.entity</value>
             </list>
         </property>
     </bean>

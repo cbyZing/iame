@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Created by chenlongbo on 2017/4/16.
  */
 public class UserRealm extends AuthorizingRealm {
-    @Autowired
-    private SysUserService sysUserService;
+   @Autowired
+   private SysUserService sysUserService;
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {

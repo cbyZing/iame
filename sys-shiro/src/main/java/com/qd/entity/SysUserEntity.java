@@ -15,7 +15,7 @@ import java.util.List;
  * 系统用户
  */
 @Entity
-@Table(schema = "iame",name = "sys_user")
+@Table(schema = "ideado",name = "sys_user")
 public class SysUserEntity implements Serializable{
     private static final long serialVersionUID = 1L;
 
@@ -39,7 +39,7 @@ public class SysUserEntity implements Serializable{
      */
     @Column(name="password")
     @NotBlank(message="密码不能为空", groups = AddGroup.class)
-    private transient String password;
+    private  String password;
 
     /**
      * 邮箱
@@ -64,6 +64,7 @@ public class SysUserEntity implements Serializable{
     /**
      * 角色ID列表
      */
+    @Transient
     private List<Long> roleIdList;
 
     /**

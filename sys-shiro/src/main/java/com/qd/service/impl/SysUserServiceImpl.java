@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 /**
  * Created by chenlongbo on 2017/4/16.
  */
-@Service("sysUserService")
+@Service
 public class SysUserServiceImpl implements SysUserService{
     @Autowired
     private SysUserDao sysUserDao;

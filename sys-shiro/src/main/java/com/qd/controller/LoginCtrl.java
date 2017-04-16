@@ -51,6 +51,13 @@ public class LoginCtrl extends BaseController{
 
     }
 
+    /**
+     * 登录
+     * @param username
+     * @param password
+     * @param captcha
+     * @return
+     */
 
     @ResponseBody
     @RequestMapping(value = "/login",method = RequestMethod.POST)
@@ -60,24 +67,28 @@ public class LoginCtrl extends BaseController{
         //if(!captcha.equalsIgnoreCase(kaptcha)){
         //	return R.error("验证码不正确");
         //}
-        return R.ok();
-//        try {
-//            Subject subject = ShiroUtils.getSubject();
-//            //sha256加密
-//            password = new Sha256Hash(password).toHex();
-//            UsernamePasswordToken token = new UsernamePasswordToken(username,password);
-//            subject.login(token);
-//        } catch (UnknownAccountException e) {
-//            R.error(e.getMessage());
-//        }catch (IncorrectCredentialsException e){
-//            R.error(e.getMessage());
-//        }catch (AuthenticationException e){
-//            R.error("账户验证失败");
-//        }
 
+        try {
+            Subject subject = ShiroUtils.getSubject();
+            //sha256加密
+            password = new Sha256Hash(password).toHex();
+            UsernamePasswordToken token = new UsernamePasswordToken(username,password);
+            subject.login(token);
+        } catch (UnknownAccountException e) {
+           return  R.error(e.getMessage());
+        }catch (IncorrectCredentialsException e){
+           return  R.error(e.getMessage());
+        }catch (AuthenticationException e){
+           return  R.error("账户验证失败");
+        }
+        return R.ok();
 
     }
 
+    /**
+     * 登出
+     * @return
+     */
     @RequestMapping(value = "logout" ,method = RequestMethod.POST)
     public String logout(){
         ShiroUtils.logout();
