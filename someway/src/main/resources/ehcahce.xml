@@ -5,7 +5,7 @@
          If the path is a Java System Property it is replaced by
          its value in the running VM.
 
-         The following properties are translated:
+         The followsqlties are translated:
          account.home - Account's home directory
          account.dir - Account's current working directory
          java.io.tmpdir - Default temp file path -->

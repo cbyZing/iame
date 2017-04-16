@@ -4,11 +4,9 @@ package com.qd.utils;
  * Created by chenlongbo on 2017/4/14.
  */
 
-        import java.awt.Color;
-        import java.awt.Font;
-        import java.awt.Graphics;
-        import java.awt.image.BufferedImage;
-        import java.util.Random;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.Random;
 
 /**
  * 验证码生成器类，可生成数字、大写、小写字母及三者混合类型的验证码。 支持自定义验证码字符数量； 支持自定义验证码图片的大小； 支持自定义需排除的特殊字符；

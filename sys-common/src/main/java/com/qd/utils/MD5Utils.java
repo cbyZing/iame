@@ -4,8 +4,8 @@ package com.qd.utils;
  * Created by chenlongbo on 2017/4/14.
  */
 
-        import java.security.MessageDigest;
-        import java.security.NoSuchAlgorithmException;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * @类名: MD5Utils

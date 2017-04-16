@@ -4,13 +4,13 @@ package com.qd.utils;
  * Created by chenlongbo on 2017/4/14.
  */
 
-        import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang.time.DateFormatUtils;
 
-        import java.sql.Timestamp;
-        import java.text.ParseException;
-        import java.text.SimpleDateFormat;
-        import java.util.Calendar;
-        import java.util.Date;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * @类名: DateUtils

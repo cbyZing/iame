@@ -1,7 +1,6 @@
 package com.qd.base;
 
 import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.DetachedCriteria;
@@ -12,7 +11,6 @@ import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
-import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**

@@ -1,9 +1,8 @@
 package com.qd.base;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import java.io.Serializable;
 
 @MappedSuperclass
 public interface ILogicalDeletable<ID extends Serializable> extends IBaseModel<ID>{
