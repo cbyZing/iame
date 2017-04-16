@@ -137,7 +137,7 @@
 
 
     <aop:config>
-        <aop:pointcut id="userService" expression="execution(* com.qd.modules.login.service.*.*(..))"/>
+        <aop:pointcut id="userService" expression="execution(* com.qd.service.*.*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="userService"/>
     </aop:config>
 
