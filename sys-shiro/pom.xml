@@ -11,5 +11,13 @@
 
     <artifactId>sys-shiro</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.qd</groupId>
+            <artifactId>sys-common</artifactId>
+            <version>${iame-project-version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

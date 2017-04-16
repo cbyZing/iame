@@ -15,13 +15,14 @@
 %>
 
 <script type="text/javascript" src="<%=basePath%>statics/jquery/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="<%=basePath%>statics/js/vue.min.js"></script>
 
 <script type="text/javascript" language="Javascript">
     var idea = {};
     $.extend(idea, {
         global : {
             basePath : '<%=basePath %>',
-            managerPath : '<%=basePath %>manager',
+            managerPath : '<%=basePath %>mana',
             clientPath : '<%=basePath %>client'
         }
     });
