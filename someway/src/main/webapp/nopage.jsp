@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-        nopage
+        <span style="color: red;">404</span>
 </body>
 </html>
