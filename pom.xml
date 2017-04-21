@@ -10,7 +10,7 @@
     <modules>
         <module>sys-common</module>
         <module>sys-shiro</module>
-        <module>someway</module>
+        <module>sys-web</module>
 
     </modules>
     <packaging>pom</packaging>

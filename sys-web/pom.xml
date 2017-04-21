@@ -6,9 +6,9 @@
         <version>${iame-project-version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>someway</artifactId>
+    <artifactId>sys-web</artifactId>
     <packaging>war</packaging>
-    <name>someway Maven Webapp</name>
+    <name>sys-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
 

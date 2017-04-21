@@ -5,6 +5,7 @@ import com.qd.entity.SysUserEntity;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by chenlongbo on 2017/4/16.
@@ -28,5 +29,11 @@ public class SysUserDao extends BaseDao{
         List<Long> menuIdList = getSession().createQuery(hql).setParameter("useId",userId).list();
 
         return menuIdList;
+    }
+
+    public static List<SysUserEntity> queryUsersList(Map<String, Object> map) {
+    }
+
+    public static int queryTotal(Map<String, Object> map) {
     }
 }
